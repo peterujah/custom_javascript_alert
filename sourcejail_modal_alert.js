@@ -15,6 +15,7 @@ var buildDom = '<div id="modal_popup" class="popup response-message">' +
 	'	  <h4 class="popup-title">' + modal_image + ' ' + modal_title + '</h4>' +
 	'	</div>' +
 	'	<div class="popup-body" style="color:#000;">' + modal_message + '</div>' +
+                ((modal_type == 'prompt') ? '<div><input type="text"/></div>' :'') +
 	'	<div class="popup-btns">' +
 	'	<span class="btn btn-xs btn-danger modalbtn" data-modalresponse="0">Cancel</span>' +
 	'	<span class="btn btn-xs btn-success modalbtn" data-modalresponse="1">Yes</span>' +
