@@ -1,0 +1,91 @@
+/*.popup-dialog {
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}*/
+.popup-dialog {
+    width: 400px;
+    margin: auto;
+    position: fixed;
+	z-index: 9999;
+	right:auto;
+	bottom:auto;
+}
+.popup-dialog {
+	left:450px;
+	top:200px;
+}
+.popup-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+.popup-header {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+	background-color:#3C3C3C;
+    min-height: 16.42857143px;
+}
+
+.popup-header .mclose {
+    margin-top: -2px;
+}
+.popup-dialog button.mclose {
+    padding: 0;
+    cursor: pointer;
+    background: #D9483D;
+    border: 0;
+    -webkit-appearance: none;
+}
+.popup-dialog .mclose {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #ffffff;
+    filter: alpha(opacity=20);
+}
+.popup-dialog h4 {
+    color: #343434;
+}
+.popup-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.popup-dialog h4 {
+    font: 24px/24px 'Istok Web';
+        font-weight: normal;
+        line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+.popup-body {
+    position: relative;
+    padding: 20px;
+}
+.response-message .popup-floating-pan {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    opacity: 0.3;
+}
+
+.popup-dialog .popup-btns{
+    padding: 10px;
+    text-align: right;
+}
