@@ -1,4 +1,4 @@
-function event2u_alert(modal_type,modal_title,modal_message){
+function sourcejail_alert(modal_type,modal_title,modal_message){
 	var modal_image = '';
 	switch(modal_type){
 		case'popup': modal_image = ''; break;
@@ -27,18 +27,10 @@ $('#event2u_alert').html(buildDom);
 		var action = $(this).attr('data-modalresponse');
 		if(action == 1){
 			$('#modal_popup').hide();
-			//return true;
+			return true;
 		}else{
 			$('#modal_popup').hide();
-			//return false;
+			return false;
 		}
 	});
 }
-$(document).ready(function(){
-	$('.deletevanitems').click(function(){
-		var modal_type = 'popup';
-		var title = 'Modal title';
-		var modal_message = 'You message has been sent! We will be in touch soon.';
-		event2u_alert(modal_type,title,modal_message);
-	});
-});
